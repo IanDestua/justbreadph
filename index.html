@@ -30,10 +30,18 @@
             background: white;
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-item:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
         }
         .menu-item img {
             width: 100%;
             border-radius: 10px;
+        }
+        .menu-item h3 {
+            margin: 10px 0;
+            font-size: 18px;
         }
         .menu-catalog {
             display: flex;
@@ -49,6 +57,10 @@
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .catalog-item:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
         }
         footer {
             margin-top: 20px;
@@ -63,22 +75,31 @@
         <h1>Just Bread PH</h1>
         <p>Authentic Pinoy Baked Goods</p>
     </header>
+    
     <div class="container">
         <h2>Our Bestsellers</h2>
-        <div class="menu-item">
-            <img src="pandesal.jpg" alt="Pandesal">
-            <h3>Pandesal</h3>
-            <p>Soft and fluffy classic Filipino bread.</p>
-        </div>
-        <div class="menu-item">
-            <img src="ensaymada.jpg" alt="Ensaymada">
-            <h3>Ensaymada</h3>
-            <p>Sweet, cheesy, and buttery goodness.</p>
-        </div>
-        <div class="menu-item">
-            <img src="ube-cheese-pandesal.jpg" alt="Ube Cheese Pandesal">
-            <h3>Ube Cheese Pandesal</h3>
-            <p>A modern twist to a classic favorite.</p>
+        <div class="menu-catalog">
+            <div class="menu-item">
+                <a href="pandesal-details.html"> <!-- Link to the Pandesal details page -->
+                    <img src="pandesal.jpg" alt="Pandesal">
+                    <h3>Pandesal</h3>
+                </a>
+                <p>Soft and fluffy classic Filipino bread.</p>
+            </div>
+            <div class="menu-item">
+                <a href="ensaymada-details.html"> <!-- Link to the Ensaymada details page -->
+                    <img src="ensaymada.jpg" alt="Ensaymada">
+                    <h3>Ensaymada</h3>
+                </a>
+                <p>Sweet, cheesy, and buttery goodness.</p>
+            </div>
+            <div class="menu-item">
+                <a href="ube-cheese-pandesal-details.html"> <!-- Link to the Ube Cheese Pandesal details page -->
+                    <img src="ube-cheese-pandesal.jpg" alt="Ube Cheese Pandesal">
+                    <h3>Ube Cheese Pandesal</h3>
+                </a>
+                <p>A modern twist to a classic favorite.</p>
+            </div>
         </div>
     </div>
     
@@ -86,18 +107,24 @@
         <h2>Our Menu</h2>
         <div class="menu-catalog">
             <div class="catalog-item">
-                <img src="hopia.jpg" alt="Hopia">
-                <h3>Hopia</h3>
+                <a href="hopia-details.html"> <!-- Link to the Hopia details page -->
+                    <img src="hopia.jpg" alt="Hopia">
+                    <h3>Hopia</h3>
+                </a>
                 <p>Flaky pastry filled with delicious mung bean paste.</p>
             </div>
             <div class="catalog-item">
-                <img src="spanish-bread.jpg" alt="Spanish Bread">
-                <h3>Spanish Bread</h3>
+                <a href="spanish-bread-details.html"> <!-- Link to the Spanish Bread details page -->
+                    <img src="spanish-bread.jpg" alt="Spanish Bread">
+                    <h3>Spanish Bread</h3>
+                </a>
                 <p>Sweet, soft bread with a buttery filling.</p>
             </div>
             <div class="catalog-item">
-                <img src="cheese-roll.jpg" alt="Cheese Roll">
-                <h3>Cheese Roll</h3>
+                <a href="cheese-roll-details.html"> <!-- Link to the Cheese Roll details page -->
+                    <img src="cheese-roll.jpg" alt="Cheese Roll">
+                    <h3>Cheese Roll</h3>
+                </a>
                 <p>Soft bread rolled with creamy cheese inside.</p>
             </div>
         </div>
